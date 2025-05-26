@@ -2,8 +2,9 @@ import React from "react";
 
 const Background: React.FC = () => {
   return (
-    <div className="absolute inset-0 -z-50 " style={{ backgroundColor: "#010515" }}>
-      <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <div className="absolute inset-0 -z-50 overflow-hidden min-w-screen" >
+      <div className="fixed inset w-screen h-screen " style={{ backgroundColor: "#010515" }}>
+        <svg className="h-full w-full " viewBox="0 0 100 100" preserveAspectRatio="none">
         <defs>
         <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
               <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
@@ -37,6 +38,7 @@ const Background: React.FC = () => {
             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
           </rect>
       </svg>
+      </div>
     </div>
   );
 };
