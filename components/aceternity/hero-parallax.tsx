@@ -146,8 +146,8 @@ export const ProductCard = ({
       >
         <Image
           src={product.thumbnail}
-          height="400"
-          width="400"
+          height="500"
+          width="500"
           className="object-cover  absolute h-full w-full inset-0"
           alt={product.title}
         />
